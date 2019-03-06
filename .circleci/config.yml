@@ -18,10 +18,6 @@ jobs:
 
     steps:
       - checkout
-      - add_ssh_keys:
-          fingerprints:
-            - "74:a2:16:ba:71:5e:e9:bd:de:b8:28:10:53:d2:b9:86"
-
       # Download and cache dependencies
       - restore_cache:
           keys:
@@ -42,4 +38,7 @@ jobs:
             command: |
                 git config user.email "jaredliu233@gmail.com"
                 git config user.name "jaredliu233"
+      - add_ssh_keys:
+          fingerprints:
+            - "74:a2:16:ba:71:5e:e9:bd:de:b8:28:10:53:d2:b9:86"
       - run: yarn auto:doc
