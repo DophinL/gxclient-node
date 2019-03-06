@@ -36,7 +36,7 @@ jobs:
       # run tests!
       - run:
         name: set git user
-          command: |
+        command: |
             git config user.email "jaredliu233@gmail.com"
             git config user.name "jaredliu233"
       - run: yarn auto:doc
