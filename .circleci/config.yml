@@ -36,9 +36,9 @@ jobs:
       - run:
             name: set git user
             command: |
-                git config user.email "jaredliu233@gmail.com"
-                git config user.name "jaredliu233"
+                git config user.email "liuzongyuan@gxb.io"
+                git config user.name "liuzongyuan"
       - add_ssh_keys:
           fingerprints:
-            - "74:a2:16:ba:71:5e:e9:bd:de:b8:28:10:53:d2:b9:86"
+            - "bc:63:1d:5e:fd:db:d0:16:15:5d:0d:1a:11:5b:d0:38"
       - run: yarn auto:doc
