@@ -34,6 +34,9 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
 
       # run tests!
-      - run: git config user.email "jaredliu233@gmail.com"
+      - run:
+        name: set git user
+          command: |
+            git config user.email "jaredliu233@gmail.com"
             git config user.name "jaredliu233"
       - run: yarn auto:doc
