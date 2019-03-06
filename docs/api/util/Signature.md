@@ -17,14 +17,9 @@ title: Signature
 
 **Example**  
 ```js
-import { Signature } from 'gxclient'
-const buf = Buffer.from('hello')
-Signature.signBuffer(buf, '5KQNge45iAFohAJFnXowuPk3ob3eiGbAQMCtff7tM78i5RNywMe')
+import { Signature } from 'gxclient'const buf = Buffer.from('hello')Signature.signBuffer(buf, '5KQNge45iAFohAJFnXowuPk3ob3eiGbAQMCtff7tM78i5RNywMe')
 ```
 **Example**  
 ```js
-// if you want to use verify_signature function in contract, you must serialize your buffer first
-import {serialize, Types} from 'gxclient'
-const buf = serialize('hello', Types.string)
-Signature.signBuffer(buf, '5KQNge45iAFohAJFnXowuPk3ob3eiGbAQMCtff7tM78i5RNywMe')
+// if you want to use verify_signature function in contract, you must serialize your buffer firstimport {serialize, Types} from 'gxclient'const buf = serialize('hello', Types.string)Signature.signBuffer(buf, '5KQNge45iAFohAJFnXowuPk3ob3eiGbAQMCtff7tM78i5RNywMe')
 ```

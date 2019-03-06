@@ -17,6 +17,5 @@ title: serialize
 
 **Example**  
 ```js
-import { serialize, Types } from 'gxclient'
-serialize('hello', Types.string).toString('hex') // => 0568656c6c6f
+import { serialize, Types } from 'gxclient'serialize('hello', Types.string).toString('hex') // => 0568656c6c6f
 ```
